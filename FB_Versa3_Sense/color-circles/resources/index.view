@@ -47,8 +47,14 @@
   <g id="hourHand" pointer-events="visible" transform="translate(50%,50%)">
     <rect x="$-6" y="-75" width="8" height="75" fill="#ffffff" />
   </g>
+  <g id="minuteHandShadow" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-5" y="-121" width="6" height="120" fill="black" />
+  </g>
   <g id="minuteHand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-4" y="-110" width="6" height="110" fill="#e0e0e0" />
+    <rect x="$-4" y="-120" width="6" height="120" fill="#ffffff" />
+  </g>
+  <g id="secondHandShadow" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-3" y="-121" width="4" height="150" fill="black" />
   </g>
   <g id="secondHand" pointer-events="visible" transform="translate(50%,50%)">
     <rect x="$-2" y="-120" width="4" height="150" fill="red" />

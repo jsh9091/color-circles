@@ -31,7 +31,10 @@ clock.granularity = "seconds";
 // Get a handle on GUI label elements
 let hourHand = document.getElementById("hourHand");
 let minuteHand = document.getElementById("minuteHand");
+let minuteHandShadow = document.getElementById("minuteHandShadow");
 let secondHand = document.getElementById("secondHand");
+let secondHandShadow = document.getElementById("secondHandShadow");
+
 
 /**
  * Rotates the clock hands to show the curent time.
@@ -44,7 +47,9 @@ function updateClock() {
 
   hourHand.groupTransform.rotate.angle = hoursToAngle(hours, mins);
   minuteHand.groupTransform.rotate.angle = minutesToAngle(mins);
+  minuteHandShadow.groupTransform.rotate.angle = minutesToAngle(mins);
   secondHand.groupTransform.rotate.angle = secondsToAngle(secs);
+  secondHandShadow.groupTransform.rotate.angle = secondsToAngle(secs);
 }
 
 // Update the clock every tick event
