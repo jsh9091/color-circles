@@ -1,3 +1,25 @@
 <svg>
   <rect id="background" />
+  <circle id="helperCircle" cx="168" cy="168" r="148" fill="black" />
+
+  <circle id="circle_12hr" cx="168" cy="40" r="20" fill="red" />
+
+  <circle id="circle_11hr" cx="168-70" cy="40+20" r="20" fill="red" />
+  <circle id="circle_1hr" cx="168+70" cy="40+20" r="20" fill="red" />
+
+  <circle id="circle_10hr" cx="168+112" cy="168-60" r="20" fill="red" />
+  <circle id="circle_2hr" cx="168-112" cy="168-60" r="20" fill="red" />
+
+  <circle id="circle_9hr" cx="168-128" cy="168" r="20" fill="red" />
+  <circle id="circle_3hr" cx="168+128" cy="168" r="20" fill="red" />
+
+  <circle id="circle_8hr" cx="168+112" cy="168+60" r="20" fill="red" />
+  <circle id="circle_4hr" cx="168-112" cy="168+60" r="20" fill="red" />
+
+  <circle id="circle_7hr" cx="168-70" cy="336-40-20" r="20" fill="red" />
+  <circle id="circle_5hr" cx="168+70" cy="336-40-20" r="20" fill="red" />
+
+  <circle id="circle_6hr" cx="168" cy="336-40" r="20" fill="red" />
+
+
 </svg>
