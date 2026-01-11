@@ -44,7 +44,7 @@
 
   <circle id="circle_6hr" cx="168" cy="336-40" r="20" fill="red" />
 
-  <text id="oneLabel" class="numbers" x="231" y="66">1</text>
+  <text id="oneLabel" class="numbers" x="230" y="66">1</text>
   <text id="twoLabel" class="numbers" x="277" y="112">2</text>
   <text id="threeLabel" class="numbers" x="297" y="177">3</text>
   <text id="fourLabel" class="numbers" x="278" y="242">4</text>
@@ -58,13 +58,13 @@
   <text id="elvenLabel" class="numbers" x="168" y="48">12</text>
 
   <g id="hourHand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-6" y="-75" width="7" height="75" fill="#ffffff" />
+    <rect x="$-6" y="-75" width="6" height="75" fill="#ffffff" />
   </g>
   <g id="minuteHandShadow" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-5" y="-121" width="5" height="120" fill="black" />
+    <rect x="$-5" y="-116" width="5" height="116" fill="black" />
   </g>
   <g id="minuteHand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-4" y="-120" width="5" height="120" fill="#ffffff" />
+    <rect x="$-4" y="-115" width="5" height="115" fill="#ffffff" />
   </g>
   <g id="secondHandShadow" pointer-events="visible" transform="translate(50%,50%)">
     <rect x="$-3" y="-121" width="3" height="150" fill="black" />
