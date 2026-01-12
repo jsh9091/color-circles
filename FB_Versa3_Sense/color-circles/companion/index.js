@@ -22,4 +22,7 @@
  * SOFTWARE.
  */
 
-console.log('Hello world!');
+import * as simpleSettings from "./simple/companion-settings";
+
+simpleSettings.setDefaultSettings();
+simpleSettings.initialize();

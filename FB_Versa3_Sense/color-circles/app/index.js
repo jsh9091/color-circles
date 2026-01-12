@@ -24,6 +24,7 @@
 
 import clock from "clock";
 import * as document from "document";
+import * as simpleSettings from "./simple/device-settings";
 
 // Tick every second
 clock.granularity = "seconds";
@@ -34,7 +35,18 @@ let minuteHand = document.getElementById("minuteHand");
 let minuteHandShadow = document.getElementById("minuteHandShadow");
 let secondHand = document.getElementById("secondHand");
 let secondHandShadow = document.getElementById("secondHandShadow");
-
+let circle_1hr = document.getElementById("circle_1hr");
+let circle_2hr = document.getElementById("circle_2hr");
+let circle_3hr = document.getElementById("circle_3hr");
+let circle_4hr = document.getElementById("circle_4hr");
+let circle_5hr = document.getElementById("circle_5hr");
+let circle_6hr = document.getElementById("circle_6hr");
+let circle_7hr = document.getElementById("circle_7hr");
+let circle_8hr = document.getElementById("circle_8hr");
+let circle_9hr = document.getElementById("circle_9hr");
+let circle_10hr = document.getElementById("circle_10hr");
+let circle_11hr = document.getElementById("circle_11hr");
+let circle_12hr = document.getElementById("circle_12hr");
 
 /**
  * Rotates the clock hands to show the curent time.
@@ -84,4 +96,64 @@ function minutesToAngle(minutes) {
  */
 function secondsToAngle(seconds) {
   return (360 / 60) * seconds;
+}
+
+/**
+ * Get and process settings changes.
+ * @param {*} data 
+ * @returns 
+ */
+function settingsCallback(data) {
+  if (!data) {
+    return;
+  }
+
+  if (data.colorSelection !== undefined && data.colorSelection !== null) {
+    console.log(data.colorSelection);
+
+    switch (data.colorSelection) {
+      case "Color Set 1":
+        setColorSetOne();
+        break;
+      case "Color Set 2":
+        setColorSetTwo();
+        break;
+      case "Color Set 3":
+        break;
+      default:
+        console.log("Unexpected value: " + data.colorSelection);
+    }
+    
+  }
+}
+simpleSettings.initialize(settingsCallback);
+
+function setColorSetOne() {
+  circle_1hr.style.fill = "#053979";
+  circle_2hr.style.fill = "#277397";
+  circle_3hr.style.fill = "#439eb1";
+  circle_4hr.style.fill = "#904247";
+  circle_5hr.style.fill = "#dc8184";
+  circle_6hr.style.fill = "#053979";
+  circle_7hr.style.fill = "#277397";
+  circle_8hr.style.fill = "#439eb1";
+  circle_9hr.style.fill = "#904247";
+  circle_10hr.style.fill = "#dc8184";
+  circle_11hr.style.fill = "#277397";
+  circle_12hr.style.fill = "#277397";
+}
+
+function setColorSetTwo() { // TODO replace colors, don't look good
+  circle_1hr.style.fill = "#01befe";
+  circle_2hr.style.fill = "#ffdd00";
+  circle_3hr.style.fill = "#ff7d00";
+  circle_4hr.style.fill = "#ff006d";
+  circle_5hr.style.fill = "#adff02";
+  circle_6hr.style.fill = "#8f00ff";
+  circle_7hr.style.fill = "#01befe";
+  circle_8hr.style.fill = "#ffdd00";
+  circle_9hr.style.fill = "#ff7d00";
+  circle_10hr.style.fill = "#ff006d";
+  circle_11hr.style.fill = "#adff02";
+  circle_12hr.style.fill = "#8f00ff";
 }

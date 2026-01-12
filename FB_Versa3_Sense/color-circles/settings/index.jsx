@@ -27,11 +27,19 @@ registerSettingsPage(({ settings }) => (
     <Section
       title={
         <Text bold align="center">
-          App Settings
+          Color Circles Settings
         </Text>
       }
     >
-      <Text>Hello world!</Text>
+      <Select
+        label={`Select Color Set`}
+        settingsKey="colorSelection"
+        options={[
+          { name: "Color Set 1" }, 
+          { name: "Color Set 2" }, 
+          { name: "Color Set 3" }
+        ]}
+      />
     </Section>
   </Page>
 ));
