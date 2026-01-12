@@ -1,2 +1,2 @@
-# color-circles
+# Color Circles
 An analog Fitbit clockface. 
