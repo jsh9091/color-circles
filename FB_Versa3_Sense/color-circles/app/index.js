@@ -47,6 +47,18 @@ let circle_9hr = document.getElementById("circle_9hr");
 let circle_10hr = document.getElementById("circle_10hr");
 let circle_11hr = document.getElementById("circle_11hr");
 let circle_12hr = document.getElementById("circle_12hr");
+let oneLabel = document.getElementById("oneLabel");
+let twoLabel = document.getElementById("twoLabel");
+let threeLabel = document.getElementById("threeLabel");
+let fourLabel = document.getElementById("fourLabel");
+let fiveLabel = document.getElementById("fiveLabel");
+let sixLabel = document.getElementById("sixLabel");
+let sevenLabel = document.getElementById("sevenLabel");
+let eightLabel = document.getElementById("eightLabel");
+let nineLabel = document.getElementById("nineLabel");
+let tenLabel = document.getElementById("tenLabel");
+let elevenLabel = document.getElementById("elevenLabel");
+let twelveLabel = document.getElementById("twelveLabel");
 
 /**
  * Rotates the clock hands to show the curent time.
@@ -119,6 +131,7 @@ function settingsCallback(data) {
         setColorSetTwo();
         break;
       case "Color Set 3":
+        setColorSetThree();
         break;
       default:
         console.log("Unexpected value: " + data.colorSelection);
@@ -129,6 +142,19 @@ function settingsCallback(data) {
 simpleSettings.initialize(settingsCallback);
 
 function setColorSetOne() {
+  oneLabel.style.fill = "white";
+  twoLabel.style.fill = "white";
+  threeLabel.style.fill = "white";
+  fourLabel.style.fill = "white";
+  fiveLabel.style.fill = "white";
+  sixLabel.style.fill = "white";
+  sevenLabel.style.fill = "white";
+  eightLabel.style.fill = "white";
+  nineLabel.style.fill = "white";
+  tenLabel.style.fill = "white";
+  elevenLabel.style.fill = "white";
+  twelveLabel.style.fill = "white";
+
   circle_1hr.style.fill = "#053979";
   circle_2hr.style.fill = "#277397";
   circle_3hr.style.fill = "#439eb1";
@@ -143,7 +169,20 @@ function setColorSetOne() {
   circle_12hr.style.fill = "#277397";
 }
 
-function setColorSetTwo() { // TODO replace colors, don't look good
+function setColorSetTwo() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
   circle_1hr.style.fill = "#01befe";
   circle_2hr.style.fill = "#ffdd00";
   circle_3hr.style.fill = "#ff7d00";
@@ -156,4 +195,32 @@ function setColorSetTwo() { // TODO replace colors, don't look good
   circle_10hr.style.fill = "#ff006d";
   circle_11hr.style.fill = "#adff02";
   circle_12hr.style.fill = "#8f00ff";
+}
+
+function setColorSetThree() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#ff99c8";
+  circle_2hr.style.fill = "#fec8c3";
+  circle_3hr.style.fill = "#fcf6bd";
+  circle_4hr.style.fill = "#d0f4de";
+  circle_5hr.style.fill = "#a9def9";
+  circle_6hr.style.fill = "#e4c1f9";
+  circle_7hr.style.fill = "#ff99c8";
+  circle_8hr.style.fill = "#ff99c8";
+  circle_9hr.style.fill = "#fcf6bd";
+  circle_10hr.style.fill = "#d0f4de";
+  circle_11hr.style.fill = "#a9def9";
+  circle_12hr.style.fill = "#e4c1f9";
 }
