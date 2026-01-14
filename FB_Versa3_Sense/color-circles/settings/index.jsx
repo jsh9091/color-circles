@@ -41,6 +41,10 @@ registerSettingsPage(({ settings }) => (
           { name: "Color Set 4" }
         ]}
       />
+      <Toggle
+          settingsKey="showDate"
+          label="Show Date"
+      />
     </Section>
   </Page>
 ));

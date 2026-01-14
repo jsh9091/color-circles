@@ -63,6 +63,8 @@ let twelveLabel = document.getElementById("twelveLabel");
 let monthLabel = document.getElementById("monthLabel");
 let dayLabel = document.getElementById("dayLabel");
 
+let showDate = false;
+
 /**
  * Rotates the clock hands to show the curent time.
  */
@@ -121,6 +123,13 @@ function secondsToAngle(seconds) {
  * @param {*} todayDate 
  */
 function updateDate(todayDate) {
+
+  if (!showDate) {
+    monthLabel.text = "";
+    dayLabel.text = "";
+    return;
+  }
+
   const monthNames = [
     "JAN",
     "FEB",
@@ -154,7 +163,9 @@ function settingsCallback(data) {
   }
 
   if (data.colorSelection !== undefined && data.colorSelection !== null) {
+    console.log(data);
     console.log(data.colorSelection);
+    console.log(data.showDate);
 
     switch (data.colorSelection) {
       case "Color Set 1":
@@ -171,6 +182,10 @@ function settingsCallback(data) {
         break;
       default:
         console.log("Unexpected value: " + data.colorSelection);
+    }
+
+    if (data.showDate !== undefined && data.showDate !== null) {
+      showDate = data.showDate;
     }
     
   }

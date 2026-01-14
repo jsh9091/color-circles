@@ -26,12 +26,14 @@ import * as messaging from "messaging";
 import { settingsStorage } from "settings";
 
 const KEY_COLOR_SET = "colorSelection";
+const KEY_SHOW_DATE = "showDate";
 
 /**
  * Establishes values for default settings on fresh install.
  */
 export function setDefaultSettings() {
   setDefaultSetting(KEY_COLOR_SET, "Color Set 1");
+  setDefaultSetting(KEY_SHOW_DATE, false);
 }
 
 /**
@@ -64,7 +66,10 @@ export function initialize() {
         let rawName = JSON.parse(evt.newValue).values[0].name;
         newValue = '"' + rawName + '"';
 
-      }
+      } else if (evt.key == KEY_SHOW_DATE) {
+        newValue = evt.newValue;
+      
+      } 
 
       sendValue(evt.key, newValue);
     }
