@@ -31,6 +31,7 @@ clock.granularity = "seconds";
 
 // Get a handle on GUI label elements
 let hourHand = document.getElementById("hourHand");
+let hourHandShadow = document.getElementById("hourHandShadow");
 let minuteHand = document.getElementById("minuteHand");
 let minuteHandShadow = document.getElementById("minuteHandShadow");
 let secondHand = document.getElementById("secondHand");
@@ -59,6 +60,8 @@ let nineLabel = document.getElementById("nineLabel");
 let tenLabel = document.getElementById("tenLabel");
 let elevenLabel = document.getElementById("elevenLabel");
 let twelveLabel = document.getElementById("twelveLabel");
+let monthLabel = document.getElementById("monthLabel");
+let dayLabel = document.getElementById("dayLabel");
 
 /**
  * Rotates the clock hands to show the curent time.
@@ -70,10 +73,13 @@ function updateClock() {
   let secs = today.getSeconds();
 
   hourHand.groupTransform.rotate.angle = hoursToAngle(hours, mins);
+  hourHandShadow.groupTransform.rotate.angle = hoursToAngle(hours, mins);
   minuteHand.groupTransform.rotate.angle = minutesToAngle(mins);
   minuteHandShadow.groupTransform.rotate.angle = minutesToAngle(mins);
   secondHand.groupTransform.rotate.angle = secondsToAngle(secs);
   secondHandShadow.groupTransform.rotate.angle = secondsToAngle(secs);
+
+  updateDate(today);
 }
 
 // Update the clock every tick event
@@ -108,6 +114,33 @@ function minutesToAngle(minutes) {
  */
 function secondsToAngle(seconds) {
   return (360 / 60) * seconds;
+}
+
+/**
+ * Updates date information displayed. 
+ * @param {*} todayDate 
+ */
+function updateDate(todayDate) {
+  const monthNames = [
+    "JAN",
+    "FEB",
+    "MAR",
+    "APR",
+    "MAY",
+    "JUN",
+    "JUL",
+    "AUG",
+    "SEP",
+    "OCT",
+    "NOV",
+    "DEC",
+  ];
+
+  const month = monthNames[todayDate.getMonth()];
+  const dayOfMonth = todayDate.getDate();
+
+  monthLabel.text = month;
+  dayLabel.text = dayOfMonth;
 }
 
 /**

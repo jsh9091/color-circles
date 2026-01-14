@@ -91,3 +91,22 @@
   fill: #277397;
 }
 
+#monthLabel {
+  x: 50%;
+  y: 67%;
+  font-size: 32;
+  font-family: FBCondensed-Regular;
+  text-length: 4;
+  fill: white;
+  text-anchor: middle;
+}
+
+#dayLabel {
+  x: 50%;
+  y: 76%;
+  font-size: 32;
+  font-family: FBCondensed-Regular;
+  text-length: 3;
+  fill: white;
+  text-anchor: middle;
+}
