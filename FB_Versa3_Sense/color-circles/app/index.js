@@ -32,7 +32,10 @@ import {
   colorSet4,
   colorSet5,
   colorSet6,
-  colorSet7
+  colorSet7,
+  colorSet8,
+  colorSet9,
+  colorSet10
 } from "../common/constants";
 
 // Tick every second
@@ -210,6 +213,15 @@ function settingsCallback(data) {
         break;
       case colorSet7:
         setColorSetSeven();
+        break;
+      case colorSet8:
+        setColorSetEight();
+        break;
+      case colorSet9:
+        setColorSetNine();
+        break;
+      case colorSet10:
+        setColorSetTen();
         break;
       default:
         console.log("Unexpected value: " + data.colorSelection);
@@ -423,3 +435,86 @@ function setColorSetSeven() {
   circle_12hr.style.fill = "#b7b7a4";
 }
 
+function setColorSetEight() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#00b9bf";
+  circle_2hr.style.fill = "#05a7b4";
+  circle_3hr.style.fill = "#0a95a9";
+  circle_4hr.style.fill = "#0f849d";
+  circle_5hr.style.fill = "#147292";
+  circle_6hr.style.fill = "#196087";
+  circle_7hr.style.fill = "#00b9bf";
+  circle_8hr.style.fill = "#05a7b4";
+  circle_9hr.style.fill = "#0a95a9";
+  circle_10hr.style.fill = "#0f849d";
+  circle_11hr.style.fill = "#147292";
+  circle_12hr.style.fill = "#196087";
+}
+
+function setColorSetNine() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#ff7b00";
+  circle_2hr.style.fill = "#ff9500";
+  circle_3hr.style.fill = "#ffaa00";
+  circle_4hr.style.fill = "#ffc300";
+  circle_5hr.style.fill = "#ffdd00";
+  circle_6hr.style.fill = "#ffec17";
+  circle_7hr.style.fill = "#ff7b00";
+  circle_8hr.style.fill = "#ff9500";
+  circle_9hr.style.fill = "#ffaa00";
+  circle_10hr.style.fill = "#ffc300";
+  circle_11hr.style.fill = "#ffdd00";
+  circle_12hr.style.fill = "#ffec17";
+}
+
+function setColorSetTen() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#e3e902";
+  circle_2hr.style.fill = "#ccd904";
+  circle_3hr.style.fill = "#b5c806";
+  circle_4hr.style.fill = "#9eb708";
+  circle_5hr.style.fill = "#87a70a";
+  circle_6hr.style.fill = "#70960c";
+  circle_7hr.style.fill = "#e3e902";
+  circle_8hr.style.fill = "#ccd904";
+  circle_9hr.style.fill = "#b5c806";
+  circle_10hr.style.fill = "#9eb708";
+  circle_11hr.style.fill = "#87a70a";
+  circle_12hr.style.fill = "#70960c";
+}

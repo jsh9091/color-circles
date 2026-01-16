@@ -32,3 +32,6 @@ export const colorSet4 = "Color Set 4";
 export const colorSet5 = "Color Set 5";
 export const colorSet6 = "Color Set 6";
 export const colorSet7 = "Color Set 7";
+export const colorSet8 = "Color Set 8";
+export const colorSet9 = "Color Set 9";
+export const colorSet10 = "Color Set 10";
