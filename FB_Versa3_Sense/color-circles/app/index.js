@@ -34,8 +34,7 @@ import {
   colorSet6,
   colorSet7,
   colorSet8,
-  colorSet9,
-  colorSet10
+  colorSet9
 } from "../common/constants";
 
 // Tick every second
@@ -240,90 +239,6 @@ function settingsCallback(data) {
 simpleSettings.initialize(settingsCallback);
 
 function setColorSetOne() {
-  oneLabel.style.fill = "white";
-  twoLabel.style.fill = "white";
-  threeLabel.style.fill = "white";
-  fourLabel.style.fill = "white";
-  fiveLabel.style.fill = "white";
-  sixLabel.style.fill = "white";
-  sevenLabel.style.fill = "white";
-  eightLabel.style.fill = "white";
-  nineLabel.style.fill = "white";
-  tenLabel.style.fill = "white";
-  elevenLabel.style.fill = "white";
-  twelveLabel.style.fill = "white";
-
-  circle_1hr.style.fill = "#053979";
-  circle_2hr.style.fill = "#277397";
-  circle_3hr.style.fill = "#439eb1";
-  circle_4hr.style.fill = "#904247";
-  circle_5hr.style.fill = "#dc8184";
-  circle_6hr.style.fill = "#053979";
-  circle_7hr.style.fill = "#277397";
-  circle_8hr.style.fill = "#439eb1";
-  circle_9hr.style.fill = "#904247";
-  circle_10hr.style.fill = "#dc8184";
-  circle_11hr.style.fill = "#277397";
-  circle_12hr.style.fill = "#277397";
-}
-
-function setColorSetTwo() {
-  oneLabel.style.fill = "black";
-  twoLabel.style.fill = "black";
-  threeLabel.style.fill = "black";
-  fourLabel.style.fill = "black";
-  fiveLabel.style.fill = "black";
-  sixLabel.style.fill = "black";
-  sevenLabel.style.fill = "black";
-  eightLabel.style.fill = "black";
-  nineLabel.style.fill = "black";
-  tenLabel.style.fill = "black";
-  elevenLabel.style.fill = "black";
-  twelveLabel.style.fill = "black";
-
-  circle_1hr.style.fill = "#01befe";
-  circle_2hr.style.fill = "#ffdd00";
-  circle_3hr.style.fill = "#ff7d00";
-  circle_4hr.style.fill = "#ff006d";
-  circle_5hr.style.fill = "#adff02";
-  circle_6hr.style.fill = "#8f00ff";
-  circle_7hr.style.fill = "#01befe";
-  circle_8hr.style.fill = "#ffdd00";
-  circle_9hr.style.fill = "#ff7d00";
-  circle_10hr.style.fill = "#ff006d";
-  circle_11hr.style.fill = "#adff02";
-  circle_12hr.style.fill = "#8f00ff";
-}
-
-function setColorSetThree() {
-  oneLabel.style.fill = "black";
-  twoLabel.style.fill = "black";
-  threeLabel.style.fill = "black";
-  fourLabel.style.fill = "black";
-  fiveLabel.style.fill = "black";
-  sixLabel.style.fill = "black";
-  sevenLabel.style.fill = "black";
-  eightLabel.style.fill = "black";
-  nineLabel.style.fill = "black";
-  tenLabel.style.fill = "black";
-  elevenLabel.style.fill = "black";
-  twelveLabel.style.fill = "black";
-
-  circle_1hr.style.fill = "#ff99c8";
-  circle_2hr.style.fill = "#fec8c3";
-  circle_3hr.style.fill = "#fcf6bd";
-  circle_4hr.style.fill = "#d0f4de";
-  circle_5hr.style.fill = "#a9def9";
-  circle_6hr.style.fill = "#e4c1f9";
-  circle_7hr.style.fill = "#ff99c8";
-  circle_8hr.style.fill = "#ff99c8";
-  circle_9hr.style.fill = "#fcf6bd";
-  circle_10hr.style.fill = "#d0f4de";
-  circle_11hr.style.fill = "#a9def9";
-  circle_12hr.style.fill = "#e4c1f9";
-}
-
-function setColorSetFour() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";
@@ -351,7 +266,63 @@ function setColorSetFour() {
   circle_12hr.style.fill = "#936fac";
 }
 
-function setColorSetFive() {
+function setColorSetTwo() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#ff99c8";
+  circle_2hr.style.fill = "#fec8c3";
+  circle_3hr.style.fill = "#fcf6bd";
+  circle_4hr.style.fill = "#d0f4de";
+  circle_5hr.style.fill = "#a9def9";
+  circle_6hr.style.fill = "#e4c1f9";
+  circle_7hr.style.fill = "#ff99c8";
+  circle_8hr.style.fill = "#ff99c8";
+  circle_9hr.style.fill = "#fcf6bd";
+  circle_10hr.style.fill = "#d0f4de";
+  circle_11hr.style.fill = "#a9def9";
+  circle_12hr.style.fill = "#e4c1f9";
+}
+
+function setColorSetThree() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#01befe";
+  circle_2hr.style.fill = "#ffdd00";
+  circle_3hr.style.fill = "#ff7d00";
+  circle_4hr.style.fill = "#ff006d";
+  circle_5hr.style.fill = "#adff02";
+  circle_6hr.style.fill = "#8f00ff";
+  circle_7hr.style.fill = "#01befe";
+  circle_8hr.style.fill = "#ffdd00";
+  circle_9hr.style.fill = "#ff7d00";
+  circle_10hr.style.fill = "#ff006d";
+  circle_11hr.style.fill = "#adff02";
+  circle_12hr.style.fill = "#8f00ff";
+}
+
+function setColorSetFour() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";
@@ -379,7 +350,7 @@ function setColorSetFive() {
   circle_12hr.style.fill = "#cbb874";
 }
 
-function setColorSetSix() {
+function setColorSetFive() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";
@@ -407,7 +378,7 @@ function setColorSetSix() {
   circle_12hr.style.fill = "#e68bf8";
 }
 
-function setColorSetSeven() {
+function setColorSetSix() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";
@@ -435,7 +406,7 @@ function setColorSetSeven() {
   circle_12hr.style.fill = "#b7b7a4";
 }
 
-function setColorSetEight() {
+function setColorSetSeven() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";
@@ -463,7 +434,7 @@ function setColorSetEight() {
   circle_12hr.style.fill = "#196087";
 }
 
-function setColorSetNine() {
+function setColorSetEight() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";
@@ -491,7 +462,7 @@ function setColorSetNine() {
   circle_12hr.style.fill = "#ffec17";
 }
 
-function setColorSetTen() {
+function setColorSetNine() {
   oneLabel.style.fill = "black";
   twoLabel.style.fill = "black";
   threeLabel.style.fill = "black";

@@ -35,7 +35,6 @@ import {
   colorSet7,
   colorSet8,
   colorSet9,
-  colorSet10
 } from "../common/constants";
 
 registerSettingsPage(({ settings }) => (
@@ -59,8 +58,7 @@ registerSettingsPage(({ settings }) => (
           { name: colorSet6 },
           { name: colorSet7 },
           { name: colorSet8 },
-          { name: colorSet9 },
-          { name: colorSet10 }
+          { name: colorSet9 }
         ]}
       />
       <Toggle
