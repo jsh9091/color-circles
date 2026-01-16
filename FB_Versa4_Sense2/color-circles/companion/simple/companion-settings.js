@@ -24,9 +24,43 @@
 
 import * as messaging from "messaging";
 import { settingsStorage } from "settings";
+import {
+  colorSelection,
+  showDate,
+  ampm,
+  colorSet1
+} from "../../common/constants";
 
-const KEY_COLOR = "color";
-const LANGUAGE_SELECTION = "languageSelection";
+const KEY_COLOR_SET = colorSelection;
+const KEY_SHOW_DATE = showDate;
+const KEY_SHOW_AM_PM = ampm;
+
+/**
+ * Establishes values for default settings on fresh install.
+ */
+export function setDefaultSettings() {
+  setDefaultSetting(KEY_COLOR_SET, colorSet1);
+  setDefaultSetting(KEY_SHOW_DATE, false);
+  setDefaultSetting(KEY_SHOW_AM_PM, false);
+}
+
+/**
+ * If the given key does not have a value set for display 
+ * on phone settings screen, then the provided value is set. 
+ * This only affects what is set as selection on phone screen, 
+ * does not communicate to watch, so default setting must be 
+ * manually matched in watch "app" code. 
+ * @param {*} key 
+ * @param {*} value 
+ */
+function setDefaultSetting(key, value) {
+  // get the actual currently set value 
+  let extantValue = settingsStorage.getItem(key);
+  if (extantValue === null) {
+    // we don't have set selected item, so set the default
+    settingsStorage.setItem(key, JSON.stringify(value));
+  }
+}
 
 /**
  * Initializes getting of settings and processing inputs. 
@@ -36,13 +70,17 @@ export function initialize() {
     if (evt.oldValue !== evt.newValue) {
 
       let newValue = "";
-      if (evt.key == LANGUAGE_SELECTION) {
+      if (evt.key == KEY_COLOR_SET) {
         let rawName = JSON.parse(evt.newValue).values[0].name;
         newValue = '"' + rawName + '"';
 
-      } else if (evt.key == KEY_COLOR) {
+      } else if (evt.key == KEY_SHOW_DATE) {
         newValue = evt.newValue;
-      }
+      
+      }  else if (evt.key == KEY_SHOW_AM_PM) {
+        newValue = evt.newValue;
+      
+      } 
 
       sendValue(evt.key, newValue);
     }

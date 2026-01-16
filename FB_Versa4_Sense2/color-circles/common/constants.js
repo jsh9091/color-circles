@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2025 Joshua Horvath
+ * Copyright (c) 2026 Joshua Horvath
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,15 +22,15 @@
  * SOFTWARE.
  */
 
-export const german = "German";
-export const french = "French";
-export const ukrainian = "Ukrainian";
-export const latin = "Latin";
-export const english = "English";
-export const hungarian = "Hungarian";
-export const spanish = "Spanish";
-export const italian = "Italian";
-export const esperanto = "Esperanto";
-export const chinese = "Chinese";
-export const greek = "Greek";
-export const hawaiian = "Hawaiian";
+export const colorSelection = "colorSelection";
+export const showDate = "showDate";
+export const ampm = "ampm";
+export const colorSet1 = "Color Set 1";
+export const colorSet2 = "Color Set 2";
+export const colorSet3 = "Color Set 3";
+export const colorSet4 = "Color Set 4";
+export const colorSet5 = "Color Set 5";
+export const colorSet6 = "Color Set 6";
+export const colorSet7 = "Color Set 7";
+export const colorSet8 = "Color Set 8";
+export const colorSet9 = "Color Set 9";

@@ -1,7 +1,7 @@
 /*
  * MIT License
  *
- * Copyright (c) 2025 Joshua Horvath
+ * Copyright (c) 2026 Joshua Horvath
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -23,18 +23,18 @@
  */
 
 import {
-  german,
-  french,
-  ukrainian,
-  latin,
-  english,
-  hungarian,
-  spanish,
-  italian,
-  esperanto,
-  chinese,
-  greek,
-  hawaiian,
+  colorSelection,
+  showDate,
+  ampm,
+  colorSet1,
+  colorSet2,
+  colorSet3,
+  colorSet4,
+  colorSet5,
+  colorSet6,
+  colorSet7,
+  colorSet8,
+  colorSet9,
 } from "../common/constants";
 
 registerSettingsPage(({ settings }) => (
@@ -42,38 +42,32 @@ registerSettingsPage(({ settings }) => (
     <Section
       title={
         <Text bold align="center">
-          Language Clock Settings
+          Color Circles Settings
         </Text>
       }
     >
-      <ColorSelect
-        settingsKey="color"
-        colors={[
-          { color: "aqua" },
-          { color: "red" },
-          { color: "gold" },
-          { color: "orchid" },
-          { color: "limegreen" },
-          { color: "darkgoldenrod" },
+      <Select
+        label={`Select Color Set`}
+        settingsKey={colorSelection}
+        options={[
+          { name: colorSet1 }, 
+          { name: colorSet2 }, 
+          { name: colorSet3 },
+          { name: colorSet4 },
+          { name: colorSet5 },
+          { name: colorSet6 },
+          { name: colorSet7 },
+          { name: colorSet8 },
+          { name: colorSet9 }
         ]}
       />
-      <Select
-        label={`Select Language`}
-        settingsKey="languageSelection"
-        options={[
-          { name: chinese }, 
-          { name: english }, 
-          { name: esperanto },
-          { name: french }, 
-          { name: german }, 
-          { name: greek }, 
-          { name: hawaiian }, 
-          { name: hungarian }, 
-          { name: italian }, 
-          { name: latin },
-          { name: spanish }, 
-          { name: ukrainian }
-        ]}
+      <Toggle
+          settingsKey={ampm}
+          label="Show AM / PM"
+      />
+      <Toggle
+          settingsKey={showDate}
+          label="Show Date"
       />
     </Section>
   </Page>
