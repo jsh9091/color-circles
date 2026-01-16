@@ -39,7 +39,8 @@ registerSettingsPage(({ settings }) => (
           { name: "Color Set 2" }, 
           { name: "Color Set 3" },
           { name: "Color Set 4" },
-          { name: "Color Set 5" }
+          { name: "Color Set 5" },
+          { name: "Color Set 6" }
         ]}
       />
       <Toggle
