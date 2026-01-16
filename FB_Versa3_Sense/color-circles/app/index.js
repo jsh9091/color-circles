@@ -180,6 +180,9 @@ function settingsCallback(data) {
       case "Color Set 4":
         setColorSetFour();
         break;
+      case "Color Set 5":
+        setColorSetFive();
+        break;
       default:
         console.log("Unexpected value: " + data.colorSelection);
     }
@@ -302,4 +305,32 @@ function setColorSetFour() {
   circle_10hr.style.fill = "#e95e50";
   circle_11hr.style.fill = "#e95e50";
   circle_12hr.style.fill = "#936fac";
+}
+
+function setColorSetFive() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#6c5d4e";
+  circle_2hr.style.fill = "#826a48";
+  circle_3hr.style.fill = "#ae8853";
+  circle_4hr.style.fill = "#9d684b";
+  circle_5hr.style.fill = "#9d956c";
+  circle_6hr.style.fill = "#cbb874";
+  circle_7hr.style.fill = "#6c5d4e";
+  circle_8hr.style.fill = "#826a48";
+  circle_9hr.style.fill = "#ae8853";
+  circle_10hr.style.fill = "#9d956c";
+  circle_11hr.style.fill = "#9d956c";
+  circle_12hr.style.fill = "#cbb874";
 }
