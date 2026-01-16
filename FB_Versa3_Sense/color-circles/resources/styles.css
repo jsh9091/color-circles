@@ -91,6 +91,16 @@
   fill: #277397;
 }
 
+#amPmLabel {
+  x: 50%;
+  y: 40%;
+  font-size: 32;
+  font-family: FBCondensed-Regular;
+  text-length: 4;
+  fill: whitesmoke;
+  text-anchor: middle;
+}
+
 #monthLabel {
   x: 50%;
   y: 67%;

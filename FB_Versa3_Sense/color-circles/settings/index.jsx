@@ -44,6 +44,10 @@ registerSettingsPage(({ settings }) => (
         ]}
       />
       <Toggle
+          settingsKey="ampm"
+          label="Show AM / PM"
+      />
+      <Toggle
           settingsKey="showDate"
           label="Show Date"
       />

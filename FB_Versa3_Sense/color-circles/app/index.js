@@ -62,7 +62,9 @@ let elevenLabel = document.getElementById("elevenLabel");
 let twelveLabel = document.getElementById("twelveLabel");
 let monthLabel = document.getElementById("monthLabel");
 let dayLabel = document.getElementById("dayLabel");
+let amPmLabel = document.getElementById("amPmLabel");
 
+let showAmPm = false;
 let showDate = false;
 
 /**
@@ -81,6 +83,7 @@ function updateClock() {
   secondHand.groupTransform.rotate.angle = secondsToAngle(secs);
   secondHandShadow.groupTransform.rotate.angle = secondsToAngle(secs);
 
+  amPmDisplay(today);
   updateDate(today);
 }
 
@@ -116,6 +119,19 @@ function minutesToAngle(minutes) {
  */
 function secondsToAngle(seconds) {
   return (360 / 60) * seconds;
+}
+
+/**
+ * Updates AM / PM label. 
+ * @param {*} today 
+ */
+function amPmDisplay(today) {
+  if (showAmPm) {
+      let rawhours = today.getHours();
+      amPmLabel.text = rawhours >= 12 ? "PM" : "AM";
+  } else {
+    amPmLabel.text = "";
+  }
 }
 
 /**
@@ -163,9 +179,6 @@ function settingsCallback(data) {
   }
 
   if (data.colorSelection !== undefined && data.colorSelection !== null) {
-    console.log(data);
-    console.log(data.colorSelection);
-    console.log(data.showDate);
 
     switch (data.colorSelection) {
       case "Color Set 1":
@@ -188,6 +201,10 @@ function settingsCallback(data) {
         break;
       default:
         console.log("Unexpected value: " + data.colorSelection);
+    }
+
+    if (data.ampm !== undefined && data.ampm !== null) {
+      showAmPm = data.ampm;
     }
 
     if (data.showDate !== undefined && data.showDate !== null) {
@@ -358,10 +375,10 @@ function setColorSetSix() {
   circle_4hr.style.fill = "#ecaac6";
   circle_5hr.style.fill = "#e99bdf";
   circle_6hr.style.fill = "#e68bf8";
-  circle_7hr.style.fill = "#f6d97c";  // 1
-  circle_8hr.style.fill = "#f3c995";  // 2
-  circle_9hr.style.fill = "#f0baae";  // 3
-  circle_10hr.style.fill = "#ecaac6"; // 4 
-  circle_11hr.style.fill = "#e99bdf"; // 5
-  circle_12hr.style.fill = "#e68bf8"; // 6
+  circle_7hr.style.fill = "#f6d97c";
+  circle_8hr.style.fill = "#f3c995";
+  circle_9hr.style.fill = "#f0baae";
+  circle_10hr.style.fill = "#ecaac6";
+  circle_11hr.style.fill = "#e99bdf";
+  circle_12hr.style.fill = "#e68bf8";
 }

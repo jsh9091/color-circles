@@ -27,6 +27,7 @@ import { settingsStorage } from "settings";
 
 const KEY_COLOR_SET = "colorSelection";
 const KEY_SHOW_DATE = "showDate";
+const KEY_SHOW_AM_PM = "ampm";
 
 /**
  * Establishes values for default settings on fresh install.
@@ -34,6 +35,7 @@ const KEY_SHOW_DATE = "showDate";
 export function setDefaultSettings() {
   setDefaultSetting(KEY_COLOR_SET, "Color Set 1");
   setDefaultSetting(KEY_SHOW_DATE, false);
+  setDefaultSetting(KEY_SHOW_AM_PM, false);
 }
 
 /**
@@ -67,6 +69,9 @@ export function initialize() {
         newValue = '"' + rawName + '"';
 
       } else if (evt.key == KEY_SHOW_DATE) {
+        newValue = evt.newValue;
+      
+      }  else if (evt.key == KEY_SHOW_AM_PM) {
         newValue = evt.newValue;
       
       } 

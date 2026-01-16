@@ -57,6 +57,7 @@
   <text id="elevenLabel" class="numbers" x="105" y="66">11</text>
   <text id="twelveLabel" class="numbers" x="168" y="48">12</text>
 
+  <text id="amPmLabel" />
   <text id="monthLabel" />
   <text id="dayLabel" />
 
