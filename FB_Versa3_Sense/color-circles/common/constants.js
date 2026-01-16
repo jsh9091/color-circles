@@ -22,47 +22,12 @@
  * SOFTWARE.
  */
 
-import {
-  colorSelection,
-  showDate,
-  ampm,
-  colorSet1,
-  colorSet2,
-  colorSet3,
-  colorSet4,
-  colorSet5,
-  colorSet6,
-} from "../common/constants";
-
-registerSettingsPage(({ settings }) => (
-  <Page>
-    <Section
-      title={
-        <Text bold align="center">
-          Color Circles Settings
-        </Text>
-      }
-    >
-      <Select
-        label={`Select Color Set`}
-        settingsKey={colorSelection}
-        options={[
-          { name: colorSet1 }, 
-          { name: colorSet2 }, 
-          { name: colorSet3 },
-          { name: colorSet4 },
-          { name: colorSet5 },
-          { name: colorSet6 }
-        ]}
-      />
-      <Toggle
-          settingsKey={ampm}
-          label="Show AM / PM"
-      />
-      <Toggle
-          settingsKey={showDate}
-          label="Show Date"
-      />
-    </Section>
-  </Page>
-));
+export const colorSelection = "colorSelection";
+export const showDate = "showDate";
+export const ampm = "ampm";
+export const colorSet1 = "Color Set 1";
+export const colorSet2 = "Color Set 2";
+export const colorSet3 = "Color Set 3";
+export const colorSet4 = "Color Set 4";
+export const colorSet5 = "Color Set 5";
+export const colorSet6 = "Color Set 6";

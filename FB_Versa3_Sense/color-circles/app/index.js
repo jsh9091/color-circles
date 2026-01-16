@@ -25,6 +25,14 @@
 import clock from "clock";
 import * as document from "document";
 import * as simpleSettings from "./simple/device-settings";
+import {
+  colorSet1,
+  colorSet2,
+  colorSet3,
+  colorSet4,
+  colorSet5,
+  colorSet6,
+} from "../common/constants";
 
 // Tick every second
 clock.granularity = "seconds";
@@ -64,8 +72,8 @@ let monthLabel = document.getElementById("monthLabel");
 let dayLabel = document.getElementById("dayLabel");
 let amPmLabel = document.getElementById("amPmLabel");
 
-let showAmPm = false;
-let showDate = false;
+let showAmPmControl = false;
+let showDateControl = false;
 
 /**
  * Rotates the clock hands to show the curent time.
@@ -126,7 +134,7 @@ function secondsToAngle(seconds) {
  * @param {*} today 
  */
 function amPmDisplay(today) {
-  if (showAmPm) {
+  if (showAmPmControl) {
       let rawhours = today.getHours();
       amPmLabel.text = rawhours >= 12 ? "PM" : "AM";
   } else {
@@ -140,7 +148,7 @@ function amPmDisplay(today) {
  */
 function updateDate(todayDate) {
 
-  if (!showDate) {
+  if (!showDateControl) {
     monthLabel.text = "";
     dayLabel.text = "";
     return;
@@ -181,22 +189,22 @@ function settingsCallback(data) {
   if (data.colorSelection !== undefined && data.colorSelection !== null) {
 
     switch (data.colorSelection) {
-      case "Color Set 1":
+      case colorSet1:
         setColorSetOne();
         break;
-      case "Color Set 2":
+      case colorSet2:
         setColorSetTwo();
         break;
-      case "Color Set 3":
+      case colorSet3:
         setColorSetThree();
         break;
-      case "Color Set 4":
+      case colorSet4:
         setColorSetFour();
         break;
-      case "Color Set 5":
+      case colorSet5:
         setColorSetFive();
         break;
-      case "Color Set 6":
+      case colorSet6:
         setColorSetSix();
         break;
       default:
@@ -204,11 +212,11 @@ function settingsCallback(data) {
     }
 
     if (data.ampm !== undefined && data.ampm !== null) {
-      showAmPm = data.ampm;
+      showAmPmControl = data.ampm;
     }
 
     if (data.showDate !== undefined && data.showDate !== null) {
-      showDate = data.showDate;
+      showDateControl = data.showDate;
     }
     
   }

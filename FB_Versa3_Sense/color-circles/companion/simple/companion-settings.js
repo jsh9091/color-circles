@@ -24,16 +24,22 @@
 
 import * as messaging from "messaging";
 import { settingsStorage } from "settings";
+import {
+  colorSelection,
+  showDate,
+  ampm,
+  colorSet1
+} from "../../common/constants";
 
-const KEY_COLOR_SET = "colorSelection";
-const KEY_SHOW_DATE = "showDate";
-const KEY_SHOW_AM_PM = "ampm";
+const KEY_COLOR_SET = colorSelection;
+const KEY_SHOW_DATE = showDate;
+const KEY_SHOW_AM_PM = ampm;
 
 /**
  * Establishes values for default settings on fresh install.
  */
 export function setDefaultSettings() {
-  setDefaultSetting(KEY_COLOR_SET, "Color Set 1");
+  setDefaultSetting(KEY_COLOR_SET, colorSet1);
   setDefaultSetting(KEY_SHOW_DATE, false);
   setDefaultSetting(KEY_SHOW_AM_PM, false);
 }
