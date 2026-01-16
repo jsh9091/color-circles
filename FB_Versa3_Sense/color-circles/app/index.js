@@ -32,6 +32,7 @@ import {
   colorSet4,
   colorSet5,
   colorSet6,
+  colorSet7
 } from "../common/constants";
 
 // Tick every second
@@ -206,6 +207,9 @@ function settingsCallback(data) {
         break;
       case colorSet6:
         setColorSetSix();
+        break;
+      case colorSet7:
+        setColorSetSeven();
         break;
       default:
         console.log("Unexpected value: " + data.colorSelection);
@@ -390,3 +394,32 @@ function setColorSetSix() {
   circle_11hr.style.fill = "#e99bdf";
   circle_12hr.style.fill = "#e68bf8";
 }
+
+function setColorSetSeven() {
+  oneLabel.style.fill = "black";
+  twoLabel.style.fill = "black";
+  threeLabel.style.fill = "black";
+  fourLabel.style.fill = "black";
+  fiveLabel.style.fill = "black";
+  sixLabel.style.fill = "black";
+  sevenLabel.style.fill = "black";
+  eightLabel.style.fill = "black";
+  nineLabel.style.fill = "black";
+  tenLabel.style.fill = "black";
+  elevenLabel.style.fill = "black";
+  twelveLabel.style.fill = "black";
+
+  circle_1hr.style.fill = "#cb997e";
+  circle_2hr.style.fill = "#eddcd2";
+  circle_3hr.style.fill = "#fff1e6";
+  circle_4hr.style.fill = "#ddbea9";
+  circle_5hr.style.fill = "#a5a58d";
+  circle_6hr.style.fill = "#b7b7a4";
+  circle_7hr.style.fill = "#cb997e";
+  circle_8hr.style.fill = "#eddcd2";
+  circle_9hr.style.fill = "#fff1e6";
+  circle_10hr.style.fill = "#ddbea9";
+  circle_11hr.style.fill = "#a5a58d";
+  circle_12hr.style.fill = "#b7b7a4";
+}
+
