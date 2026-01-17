@@ -1,0 +1,85 @@
+<!--
+  MIT License
+
+  Copyright (c) 2026 Joshua Horvath
+  
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+ 
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+ 
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE. -->
+
+<svg>
+  <rect id="background" />
+  <circle id="helperCircle" cx="150" cy="150" r="140" fill="black" />
+
+  <circle id="circle_12hr" cx="150" cy="30" r="20" />
+
+  <circle id="circle_11hr" cx="150-59" cy="46" r="20" />
+  <circle id="circle_1hr" cx="150+59" cy="46" r="20" />
+
+  <circle id="circle_10hr" cx="150-103" cy="150-62" r="20" />
+  <circle id="circle_2hr" cx="150+103" cy="150-62" r="20" />
+
+  <circle id="circle_9hr" cx="150-120" cy="150" r="20" />
+  <circle id="circle_3hr" cx="150+120" cy="150" r="20" />
+
+  <circle id="circle_8hr" cx="150-103" cy="150+62" r="20" />
+  <circle id="circle_4hr" cx="150+103" cy="150+62" r="20" />
+
+  <circle id="circle_7hr" cx="150-59" cy="254" r="20" />
+  <circle id="circle_5hr" cx="150+59" cy="254" r="20" />
+
+  <circle id="circle_6hr" cx="150" cy="300-30" r="20" />
+
+  <text id="oneLabel" class="numbers" x="210" y="54">1</text>
+  <text id="twoLabel" class="numbers" x="254" y="97">2</text>
+  <text id="threeLabel" class="numbers" x="271" y="160">3</text>
+  <text id="fourLabel" class="numbers" x="254" y="222">4</text>
+  <text id="fiveLabel" class="numbers" x="210" y="265">5</text>
+  <text id="sixLabel" class="numbers" x="150" y="280">6</text>
+  <text id="sevenLabel" class="numbers" x="92" y="265">7</text>
+  <text id="eightLabel" class="numbers" x="47" y="222">8</text>
+  <text id="nineLabel" class="numbers" x="30" y="160">9</text>
+  <text id="tenLabel" class="numbers" x="48" y="97">10</text>
+  <text id="elevenLabel" class="numbers" x="92" y="54">11</text>
+  <text id="twelveLabel" class="numbers" x="150" y="39">12</text>
+
+  <text id="amPmLabel" />
+  <text id="monthLabel" />
+  <text id="dayLabel" />
+
+  <g id="hourHandShadow" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-7" y="-75" width="7" height="76" fill="black" />
+  </g>
+  <g id="hourHand" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-6" y="-75" width="6" height="75" fill="#ffffff" />
+  </g>
+  <g id="minuteHandShadow" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-5" y="-113" width="5" height="113" fill="black" />
+  </g>
+  <g id="minuteHand" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-4" y="-112" width="5" height="112" fill="#ffffff" />
+  </g>
+  <g id="secondHandShadow" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-3" y="-121" width="3" height="150" fill="black" />
+  </g>
+  <g id="secondHand" pointer-events="visible" transform="translate(50%,50%)">
+    <rect x="$-2" y="-120" width="3" height="150" fill="red" />
+  </g>
+  <circle cx="50%" cy="50%" r="10" fill="red" />
+  <circle cx="50%" cy="50%" r="5" fill="black" />
+
+</svg>
