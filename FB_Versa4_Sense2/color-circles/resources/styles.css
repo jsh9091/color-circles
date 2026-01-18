@@ -40,55 +40,55 @@
   font-family: FBNucleon-Black;
   text-anchor: middle;
   text-length: 3;
-  fill: white;
+  fill: black;
 }
 
 #circle_1hr {
-  fill: #053979;
+  fill: #0cb2af;
 }
 
 #circle_2hr {
-  fill: #277397;
+  fill: #a1c65d;
 }
 
 #circle_3hr {
-  fill: #439eb1;
+  fill: #fac723;
 }
 
 #circle_4hr {
-  fill: #904247;
+  fill: #f29222;
 }
 
 #circle_5hr {
-  fill: #dc8184;
+  fill: #e95e50;
 }
 
 #circle_6hr {
-  fill: #053979;
+  fill: #936fac;
 }
 
 #circle_7hr {
-  fill: #277397;
+  fill: #a1c65d;
 }
 
 #circle_8hr {
-  fill: #439eb1;
+  fill: #fac723;
 }
 
 #circle_9hr {
-  fill: #904247;
+  fill: #f29222;
 }
 
 #circle_10hr {
-  fill: #dc8184;
+  fill: #e95e50;
 }
 
 #circle_11hr {
-  fill: #277397;
+  fill: #e95e50;
 }
 
 #circle_12hr {
-  fill: #277397;
+  fill: #936fac;
 }
 
 #amPmLabel {
