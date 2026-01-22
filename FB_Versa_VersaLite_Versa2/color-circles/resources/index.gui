@@ -62,19 +62,19 @@
   <text id="dayLabel" />
 
   <g id="hourHandShadow" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-7" y="-71" width="7" height="71" fill="black" />
+    <rect x="$-7" y="-72" width="7" height="71" fill="black" />
   </g>
   <g id="hourHand" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-6" y="-70" width="6" height="70" fill="#ffffff" />
+    <rect x="$-6" y="-70" width="7" height="70" fill="#ffffff" />
   </g>
   <g id="minuteHandShadow" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-5" y="-107" width="5" height="107" fill="black" />
+    <rect x="$-5" y="-108" width="5" height="107" fill="black" />
   </g>
   <g id="minuteHand" pointer-events="visible" transform="translate(50%,50%)">
     <rect x="$-4" y="-106" width="5" height="106" fill="#ffffff" />
   </g>
   <g id="secondHandShadow" pointer-events="visible" transform="translate(50%,50%)">
-    <rect x="$-3" y="-114" width="3" height="143" fill="black" />
+    <rect x="$-3" y="-115" width="3" height="143" fill="black" />
   </g>
   <g id="secondHand" pointer-events="visible" transform="translate(50%,50%)">
     <rect x="$-2" y="-113" width="3" height="143" fill="red" />
