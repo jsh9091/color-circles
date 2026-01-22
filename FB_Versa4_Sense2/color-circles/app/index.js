@@ -258,7 +258,7 @@ function setColorSetTwo() {
   circle_5hr.style.fill = "#a9def9";
   circle_6hr.style.fill = "#e4c1f9";
   circle_7hr.style.fill = "#ff99c8";
-  circle_8hr.style.fill = "#ff99c8";
+  circle_8hr.style.fill = "#fec8c3";
   circle_9hr.style.fill = "#fcf6bd";
   circle_10hr.style.fill = "#d0f4de";
   circle_11hr.style.fill = "#a9def9";
@@ -290,7 +290,7 @@ function setColorSetFour() {
   circle_7hr.style.fill = "#6c5d4e";
   circle_8hr.style.fill = "#826a48";
   circle_9hr.style.fill = "#ae8853";
-  circle_10hr.style.fill = "#9d956c";
+  circle_10hr.style.fill = "#9d684b";
   circle_11hr.style.fill = "#9d956c";
   circle_12hr.style.fill = "#cbb874";
 }
