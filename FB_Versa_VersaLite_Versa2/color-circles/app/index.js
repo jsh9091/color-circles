@@ -242,10 +242,10 @@ function setColorSetOne() {
   circle_4hr.style.fill = "#f29222";
   circle_5hr.style.fill = "#e95e50";
   circle_6hr.style.fill = "#936fac";
-  circle_7hr.style.fill = "#a1c65d";
-  circle_8hr.style.fill = "#fac723";
-  circle_9hr.style.fill = "#f29222";
-  circle_10hr.style.fill = "#e95e50";
+  circle_7hr.style.fill = "#0cb2af";
+  circle_8hr.style.fill = "#a1c65d";
+  circle_9hr.style.fill = "#fac723";
+  circle_10hr.style.fill = "#f29222";
   circle_11hr.style.fill = "#e95e50";
   circle_12hr.style.fill = "#936fac";
 }
