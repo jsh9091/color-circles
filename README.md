@@ -6,3 +6,8 @@ Note: This clockface is not yet published to the Fitbit app store.
 [Fitbit App Gallery listing](https://gallery.fitbit.com/details/1b21f41e-25b7-493a-9976-42fd3578c726?key=d97e2195-62e6-49fe-b07e-e3c404c25829) 
 
 ![screenshot of watch-face](Screenshot.png)
+
+---
+Settings panel for clock-face in Fitbit phone app: 
+
+![settings panel in Fitbit phone app](Settings%20Panel.png)
